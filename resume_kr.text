@@ -1,0 +1,148 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://keshavramaswamy.github.io}{\Large Keshav Ramaswamy}} & Email : \href{mailto:keshav.ramaswamy@gmail.com}{keshav.ramaswamy@gmail.com}\\
+  \href{http://keshavramaswamy.github.io}{\underline{http://keshavramaswamy.github.io}} & Mobile : +1-352-281-6307 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Gainesville, FL}
+      {Master of Science in Computer Science}{Aug. 2014 -- Aug. 2016}
+    \resumeSubheading
+      {SASTRA University}{Thanjavur, India}
+      {Bachelor of Technology in Computer Science}{May. 2010 -- May. 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Infor}{Cambridge, MA}
+      {Data Scientist}{Sep 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{CRM Sales Intelligence}
+            {
+            Developed a POC for New Prospect Scoring, Cross Sell Lead Scoring, Next Likely Purchase and Attrition Risk based on Client Transactions and Engagement Data using various Machine Learning techniques. \newline
+            Product Adoption by client resulted in strong New Prospect conversion performance with more than 70\% of the conversions from 20\% of the leads. Customer Business has diversified across a wider range of products after adopting Cross Sell Recommendations.
+            \newline
+            Collaborated closely with the Engineering team for migrating to production. Supported and built RShiny dashboards for the clients and updated it regularly with batch predictions. Developed and maintained the Python based data pipeline for the entire product and QA with the Engineering team.
+            }      
+        \resumeItem{Internal Customer Churn Scoring}
+          {Responsible for developing a ML based internal solution to identify customers at high risk of churn and provide customer specific reasons impacting the risk. Collaborated closely with the Subscription Services team to work on improving the model predictions on an iterative basis. \newline
+          Model has been able to capture 75\% customer churn during back-testing and identify customized business metrics impacting churn. \newline
+          Working on implementing a closed loop process to alert Subscription Services Managers of high risk churning customers. Automated Customer Health dashboard refresh which reduced manual effort.}
+        \resumeItem{Distributor Van Timeliness Prediction}
+          {Worked on a POC with a customer to develop a model which can identify delivery vans at a high risk of arriving late. Historical Sales, GPS Data, Van Routes and schedules were used for modelling and analyze main factors causing late van deliveries.}
+        \resumeItem{Infor Coleman AI Platform}
+          {Infor Coleman is a PAAS developed to help business users quickly implement abstracted Machine Learning models. Supported internal sales teams by developing demo applications which can serve as model use-cases in the enterprise.}
+        \resumeItem{Pricing Science for Distribution}
+          {Pricing Science for Distribution helps enterprise distribution companies to define prices for customer, product and location combinations, in order to maximize total revenue and margin. Implemented existing solution for a potential customer in a POC. }          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DataXu}{Boston, MA}
+      {Data Science Engineering Intern}{Jun 2015 - Dec 2015}
+      \resumeItemListStart
+        \resumeSubItem{Cruise Control Diagnostics} {Improved the performance of optimizing advertising campaigns by 15\% by developing a tool which diagnoses campaigns having infeasibility. Automated the diagnosis and designed an internal dashboard to display the incorrect metric causing infeasibility for each campaign.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \textbf {Survival Analysis in Cricket} 
+    \href{https://github.com/keshavramaswamy/ipython-notebooks/blob/master/survival_analysis.ipynb}{(\underline{Jupyter Notebook with Plotly Visualization)}}
+    {\newline Application of survival analysis in analyzing career lengths of 1725 cricket players and predicting the hazard rate of current players. Player data was scraped and cleaned and censoring information was manually added. \newline
+    The players’ survival curves were estimated and further analyzed by grouping into different cohorts. The survival curves and hazard rates of current players were predicted using Survival Regression models.
+    }
+    \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+      \textbf{Languages}{: Python, R, Bash, SQL}
+      \newline
+      \textbf{Technologies}{: AWS, RShiny, Spark}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
